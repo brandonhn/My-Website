@@ -633,3 +633,78 @@ footer{
     margin: 10px;
   }
 }
+
+@media screen and (max-width: 480px){
+  #resume-link{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .ASL-article{
+    margin: 25px;
+    height: 250px;
+    width: 320px;
+  }
+
+  .fvtutor{
+    margin: 0 20px;
+    height: 160px;
+    width: 330px;
+  }
+
+  .kumonpic{
+    margin: 10px 20px;
+    height: 80px;
+    width: 280px;
+  }
+
+  .deerpark{
+    margin: 5px 20px;
+    height: 130px;
+    width: 200px;
+  }
+
+  .aikido{
+    margin: 5px 60px;
+    height: 124px;
+    width: 300px;
+  }
+
+  .catan{
+    margin: 5px 60px;
+    height: 124px;
+    width: 300px;
+  }
+
+  .naruto{
+    margin: 5px 130px;
+    height: 120px;
+    width: 140px;
+  }
+
+  .contact-title{
+    font-size: 20px;
+    margin: none;
+  }
+
+  .gmail{
+    font-size: 16px;
+  }
+
+  #git-logo{
+    height: 38px;
+  }
+
+  #linkedin-logo{
+    height: 38px;
+  }
+
+  #fb-logo{
+    height: 38px;
+  }
+
+  footer{
+    font-size: 15px;
+  }
+}
