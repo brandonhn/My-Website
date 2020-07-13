@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Brandon Nguyen | What I Do</title>
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <h4 class="nav-logo"><a href="#">Brandon Nguyen</a></h4>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#intro-nav">About</a></li>
+          <li><a href="#resume-nav">Resume</a></li>
+          <li><a href="#passion-nav">Passions</a></li>
+          <li><a href="#contact-nav">Contact</a></li>
+        </ul>
+      </nav>
+      <script src="app.js"></script>
+    </header>
+    <section class="intro" id="intro-nav">
+      <h1 class="name">About Me</h1>
+      <div>
+        <p class="about-me-text" id="bigger">
+          Welcome to my page. My name is Brandon Nguyen, and it is a pleasure
+          to have you get to know me better.
+        </p>
+        <img class="my-face" src="edited.png">
+          <div>
+            <p class="about-me-text" id="mobile-bio1">
+              I am currently an incoming sophomore at the University of California
+              San Diego as a Neurobiology major, hoping to transfer into Computer Science.
+              <br>Having only taken a few quarters of computer science classes, I am still relatively
+              new to the field and am in the process of discovering my talents and <br>where I
+              can contribute to this massive field. This website currently serves as a checkpoint
+              in my self-study of CSS, HTML, and other languages as well <br>as
+              provide a little bit of insight as to who I am.
+            </p>
+          </div>
+          <div>
+            <p class="about-me-text" id="below">
+              Below are the languages I've been learning and applying recently:
+            </p>
+            <ul class="about-me-text" id="smaller">
+              <li>HTML & CSS</li>
+              <li>Java</li>
+              <li>Python 3</li>
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <div>
+              <p class="about-me-text" id="reiterate">
+                To reiterate, it is a pleasure to have you be here. I am excited to share with you
+                more about me and as well, would love the chance to eventually learn more about you!
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="resume" id="resume-nav">
+      <a id="resume-link" target="_blank" rel="noopener noreferrer" href="7-12-2020.pdf">
+        View My Resume!
+      </a>
+    </section>
+    <section class="passions" id="passion-nav">
+      <h2 class="passion-title">Passions</h2>
+      <div class="tabContainer">
+        <div class="buttonContainer">
+          <button onclick="showPanel(0, '#fffdde')">ASL</button>
+          <button onclick="showPanel(1, '#fffdde')">Piano</button>
+          <button onclick="showPanel(2, '#fffdde')">Tutoring</button>
+          <button onclick="showPanel(3, '#fffdde')">Hobbies</button>
+        </div>
+        <div class="tabPanel">
+          <h3 class="ASL-title">American Sign Language</h3>
+          <p class="ASL-text">Sign Language is an underappreciated and valuable asset in many communities. With my
+            grandfather and
+            father developing hearing deficiency, it became more urgent for me to dive deeper into American Sign Language.
+            While
+            only having a few years of experience, I took it upon myself to teach those unaware of the art while in high
+            school. As the
+            president of the American Sign Language Club, I taught introductory and practical ASL and organized deaf socials
+            to expose the new
+            club members to. It was an amazing experience being able to contribute to the deaf community as well as expose
+            those
+            blessed with proper-functioning senses to a world out of our radar.
+            <br>
+            <br>
+            There is an article about my experience with introducing American Sign Language to my High School.
+            <br>
+            <br>
+            You can read the full article <a id="arti-link" target="_blank" rel="noopener noreferrer"
+              href="https://www.baronnews.com/2018/09/24/asl-club-brings-diversity-to-fvhs-world-languages/">here</a>
+          </p>
+          <img class="ASL-article" src="aslarti.png">
+        </div>
+        <div class="tabPanel">
+          <h3 class="ASL-title">Piano</h3>
+          <p class="piano-text">My mother was a former piano teacher in Vietnam; it was inevitable that (*stereotype joke*)
+            I, an asian-born son to a musical mother,
+            would lay my <br>hands on the musical instrument mum loved most. I've been taught by my <br>mother since I was
+            six and participated in local and state competitions. I <br>won a few local
+            tournaments before I stopped partaking in competition and <br>began to play more casually. Nowadays, I
+            absolutely enjoy playing songs I <br>like, mainly video game music and
+            anime tracks on piano. I have since started <br>a YouTube channel that I occasionally upload playings of songs I
+            enjoy.
+            <br>
+            <br>
+            <img class="piano-trophies" src="pianotrophies.png">
+          </p>
+          <br>
+          <div class="iframe-div">
+            <h4 class="vid-bait">Here is one of my most recent videos, and perhaps the hardest and most enjoyable piece I've
+              ever played. You can also listen to more on my YouTube Channel <a id="piano-link" target="_blank"
+                rel="noopener noreferrer" href="https://www.youtube.com/channel/UCp1qhbXNyPzOfPD5_FRyUuA">here</a></h4>
+            <div class="vid-dvi">
+              <iframe class="piano-vid" width="560" height="315" src="https://www.youtube.com/embed/3OtJJkRYOOM"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="tabPanel">
+          <h3 class="ASL-title">Tutoring</h3>
+          <img src="tutorfv.png" class="fvtutor">
+          <img src="kumon.jpg" class="kumonpic">
+          <img src="deerpark.jpg" class="deerpark">
+          <div class="tutor-text">
+            <p>Growing up in a buddhist family, my parents taught me that the greatest treasure is to give. In regards to
+              such philosophy,
+              I find it most transparent and true when it comes teaching others. For me, the process of being able to help
+              others understand something new, something they may struggle with,
+              and getting more personal with them is an extremely gratifying experience. With or without pay, I have had an
+              abundance of tutoring experience. Since the age of 15, I have voluntarily
+              tutored at my local Buddhist meditation center, Compassionate Eyes Inc. for Buddhist children every summer. In
+              High School, I was part of the Barons After School Academics, a system of private tutoring
+              where parents reached out to me for tutoring their students in a more professional manner; I have tutored
+              multiple students over long and consistent durations and am capable of drawing
+              my references from said parents. Finally, I have also worked with children of a diverse age range whilst at
+              Kumon, teaching Math and Reading from levels K-12. Each of these experiences have brought me pure joy; just
+              being able to see the smiles on those I've helped makes my day so worthwhile.
+            </p>
+          </div>
+        </div>
+        <div class="tabPanel">
+          <h3 class="ASL-title">Hobbies</h3>
+          <img src="aikido.jpg" class="aikido">
+          <img src="catan.jpg" class="catan">
+          <img src="naruto.jpg" class="naruto">
+          <div class="hobby-text">
+            <p>Some of my most prominent hobbies are practicing and analyzing martial arts, board games (in particular
+              Settlers of Catan), and watching anime / reading manga.
+              I have been engaged in multiple forms of martial arts since the age of 6, including Aikido (11 years), Kendo
+              (2 years), Karate (2 years), and Boxing (2 years). As an avid board game player,
+              I enjoy spending 'board game nights' with friends, playing Monopoly, Monopoly Deal, Settlers of Catan, etc,
+              and am excited to try new ones! I am also a huge anime enthusiast! My childhood was built on anime
+              and manga, and I am an active attender of Anime Conventions. If you share any of these interests, I would love
+              to talk more about them with you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="tab.js"></script>
+    <section class="contact" id="contact-nav">
+      <h1 class="contact-title">Get In Touch</h1>
+        <h2 class="gmail">bhn002@ucsd.edu</a>
+        <div class="contact-logos">
+          <a href="https://github.com/brandonhn" id="git-link" target="_blank" rel="noopener noreferrer">
+            <img src="gh-logo.png" id="git-logo">
+          </a>
+          <a href="https://www.linkedin.com/in/brandon-nguyen-5aa066197/" id="linkedin-link" target="_blank" rel="noopener noreferrer">
+            <img src="linkedin-logo.png" id="linkedin-logo">
+          </a>
+          <a href="https://www.facebook.com/brandon.nguyen.39794" id="linkedin-link" target="_blank" rel="noopener noreferrer">
+            <img src="fb-logo2.png" id="fb-logo">
+          </a>
+        </div>
+    </section>
+    <footer>
+      Developed by Brandon Nguyen, 2020.
+    </footer>
+  </main>
+</body>
+</html>

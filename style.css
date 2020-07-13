@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* tweaked from 0 to 1px */
+}
+
+nav{
+  height: 10vh;
+  background: url("starspace.jpg");
+  font-family: 'Barlow', sans-serif;
+  background-image: linear-gradient(#000,rgba(0,0,0,.1));
+  justify-content: space-around;
+  position: fixed;
+  align-items: center;
+  padding: 20px 0;
+  right: 0;
+  left: 0;
+}
+
+br{
+  display: none;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-logo a{
+  position: absolute;
+  display: inline-block;
+  font-family: 'Barlow', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  top: 25px;
+  left: 100px;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-logo a:hover{
+  color: rgb(149, 132, 171);
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-list a:hover{
+  color: rgb(149, 132, 171);
+}
+
+.intro{
+  background: url("starspace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name{
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3.5em;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+
+.about-me-text{
+  font-family: 'Crimson Text', serif;
+  font-size:20px;
+  color:white;
+  font-weight:600;
+  margin: 40px;
+}
+
+#mobile-bio1{
+  font-weight: 10;
+}
+
+#bigger{
+  font-size:25px;
+  text-align:center;
+  color: white;
+}
+
+.my-face{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 300px;
+  width: auto;
+}
+
+#smaller{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(140px,200px));
+  margin: 40px 40px 70px 70px;
+}
+
+#reiterate{
+  font-size:25px;
+  color: white;
+}
+
+.resume{
+  width: auto;
+  background-image: url("trueresumebg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 100px;
+}
+
+#resume-link{
+  margin-left: 40%;
+  margin-right: auto;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(125, 249, 255);
+  text-decoration: none;
+}
+
+.passions{
+  background-color: rgb(13, 21, 94);
+}
+
+.passion-title{
+  text-decoration: none;
+  margin: 40px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 50px;
+  font-weight:100;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.tabContainer{
+  width: 100%;
+  height: 800px;
+}
+
+.tabContainer .buttonContainer{
+  height: 15%;
+}
+
+.tabContainer .buttonContainer button{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  color: rgb(237, 246, 250);
+  font-weight: 100;
+  background-color: rgb(166, 174, 177);
+  transition: all 0.5s ease 0s;
+}
+
+.tabContainer .buttonContainer button:hover{
+  background-color: rgb(211, 216, 219);
+}
+
+.tabContainer .tabPanel{
+  height: 85%;
+  color: '#383837';
+  text-align: center;
+  padding-top: 35px;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  display: none;
+}
+
+.ASL-title{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.ASL-text{
+  margin: 40px;
+  width: 50%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 50;
+  opacity: 0.7;
+  float: left;
+}
+
+.ASL-article{
+  margin: 40px;
+  width: 420px;
+  height: 370px;
+  float: right;
+}
+
+.piano-text{
+  margin: 40px;
+  width: 50%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 50;
+  float: left;
+   opacity: 0.7;
+}
+
+.piano-trophies{
+  margin: 0 150px;
+  width: 300px;
+  height: 190px;
+  float: left;
+  padding: 0;
+}
+
+.piano-vid{
+  margin: 0 120px;
+  width: 380px;
+  height: 300px;
+  float: right;
+}
+
+.vid-bait{
+  margin: 40px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 50;
+   opacity: 0.7;
+}
+
+.fvtutor{
+  margin: 0 30px;
+  width: 450px;
+  height: 300px;
+  float: left;
+}
+
+.kumonpic{
+  margin: 50px 30px;
+  float:left;
+  width: 420px;
+  height: 150px;
+}
+
+.deerpark{
+  float:right;
+  height: 300px;
+  width: 350px;
+  margin: 0 30px;
+}
+
+.tutor-text{
+  float: left;
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  margin: 30px;
+   opacity: 0.7;
+}
+
+.aikido{
+  margin: 0 30px;
+  width: 450px;
+  height: 300px;
+  float: left;
+}
+
+.catan{
+  margin: 0px 40px;
+  float:left;
+  width: 420px;
+  height: 300px;
+}
+
+.naruto{
+  float: right;
+  height: 300px;
+  margin: 0 100px;
+}
+
+.hobby-text{
+  float: left;
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  margin: 30px;
+   opacity: 0.7;
+}
+
+.contact{
+  background: url("snowmountain.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding: 130px;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
+}
+
+.contact-title{
+  font-weight: 800;
+  font-size: 50px;
+  transform: translate(0, -90px);
+  opacity: 1;
+}
+
+
+.gmail{
+  font-weight: 700;
+  font-size: 25px;
+  opacity: 1;
+}
+
+.contact-logos{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 500px;
+}
+
+#git-logo{
+  border-radius: 50%;
+  height:47px;
+}
+
+#linkedin-logo{
+  border-radius: 50%;
+  height: 47px;
+}
+
+#fb-logo{
+  border-radius: 50%;
+  height: 47px;
+}
+
+.contact-logos a{
+  transition: all 0.5s ease 0s;
+}
+
+.contact-logos a:hover{
+  transform: scale(1.25);
+}
+
+footer{
+    background-image: linear-gradient(45deg,#7cb5ff,#40f);
+    text-align: center;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px){
+
+  .line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  nav{
+    position: fixed;
+    background: transparent;
+    background-image: linear-gradient(#000,rgba(0,0,0,.1));
+  }
+
+  .nav-logo a{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    right: 40%;
+    transform: translate(0, -50%);
+  }
+
+  .nav-logo a:hover{
+    color: rgb(149, 132, 171);
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-list{
+    position: fixed;
+    background: transparent;
+    background-image: linear-gradient(#000,rgba(0,0,0,.1));
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0 at 90% 10%);
+    -webkit-clip-path: circle(0 at 90% 10%);
+    transition: all 1s ease-out;
+    pointer-events: all;
+  }
+
+  .nav-list.open{
+     clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+
+  .nav-list li{
+    opacity: 0;
+  }
+
+  .nav-list li a{
+    font-size: 25px;
+  }
+
+  .nav-list li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .nav-list li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .nav-list li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+  }
+
+  .nav-list li:nth-child(4){
+    transition: all 0.5s ease 0.8s;
+  }
+
+  .nav-list li.fade{
+    opacity: 1;
+  }
+
+  .nav-logo{
+    display: none;
+  }
+
+  .name{
+    font-size: 40px;
+  }
+
+  .about-me-text{
+    margin: 15px;
+  }
+
+  #bigger{
+    font-size: 20px;
+  }
+
+  .my-face{
+    height: 220px;
+  }
+
+  #mobile-bio1{
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  br{
+    display: none;
+  }
+
+  #smaller{
+    font-size: 18px;
+  }
+
+  #below{
+    font-size: 20px;
+  }
+
+  #reiterate{
+    font-size: 18px;
+  }
+
+  .resume{
+    height: 200px;
+  }
+
+  #resume-link{
+    font-size: 35px;
+    margin: 30px;
+    text-align:center;
+    color: rgb(99, 165, 184);
+  }
+
+    .passion-title{
+    font-size: 35px;
+  }
+
+  .tabContainer{
+    height: 1100px;
+  }
+
+  .tabContainer .buttonContainer{
+    height: 6%;
+  }
+  .tabContainer .tabPanel{
+    height: 94%;
+  }
+  .tabContainer .buttonContainer button{
+    font-size: 18px;
+  }
+
+  .ASL-text{
+    font-size: 16px;
+    float: none;
+    text-align: left;
+    width: 90%;
+    margin: 10px;
+  }
+
+  .piano-text{
+    font-size: 16px;
+    float: none;
+    text-align: left;
+    width: 90%;
+    margin: 10px;
+  }
+
+  .piano-text br{
+    display: none;
+  }
+
+  .piano-trophies{
+    float: none;
+    margin: 15px;
+  }
+
+  .vid-bait{
+    font-size: 16px;
+    margin: 15px;
+  }
+
+  .piano-vid{
+    float: none;
+    margin: 15px;
+    height: 260px;
+    width: 360px;
+  }
+
+  .fvtutor{
+    margin: 0 30px;
+    height: 200px;
+    width: 410px;
+  }
+
+  .kumonpic{
+    margin: 10px 30px;
+    width: 400px;
+    height: 100px;
+    float: none;
+  }
+
+  .deerpark{
+    float: none;
+    height: 170px;
+    width: 260px;
+  }
+
+  .tutor-text{
+    font-size: 16px;
+  }
+
+  .tutor-text br{
+    display: none;
+  }
+
+  .aikido{
+    margin: 5px 30px;
+    height: 160px;
+    width: 410px;
+  }
+
+  .catan{
+    margin: 5px 30px;
+    width: 400px;
+    height: 160px;
+  }
+
+  .naruto{
+    margin: 5px 150px;
+    height: 140px;
+    width: 180px;
+  }
+
+  .hobby-text{
+    font-size: 16px;
+  }
+
+  .contact-title{
+    font-size: 35px;
+  }
+
+  .gmail{
+    font-size: 20px;
+  }
+
+  .contact-logos{
+    margin: 10px;
+  }
+}
