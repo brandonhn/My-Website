@@ -761,7 +761,7 @@ footer{
 
 
   .open-name{
-    transform: translateX(-300px);
+    transform: translateX(-250px);
     font-size: 40px;
     display: flex;
     white-space: nowrap;
