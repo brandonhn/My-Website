@@ -761,9 +761,9 @@ footer{
 
 
   .open-name{
-    transform: translateX(-250px);
+    transform: translateX(-310px);
     font-size: 40px;
-    display: flex;
+    display: inline-flex;
     white-space: nowrap;
   }
 
@@ -772,8 +772,8 @@ footer{
   }
 
   .twtext{
-    transform: translateX(-225px);
-    display: flex;
+    transform: translateX(-245px);
+    display: inline-flex;
     white-space:nowrap;
     letter-spacing: 0.3px;
   }
