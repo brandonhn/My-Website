@@ -425,6 +425,10 @@ footer{
 
 @media screen and (max-width: 768px){
 
+  body{
+    overflow-x: hidden;
+  }
+
   .line{
     width: 30px;
     height: 3px;
@@ -676,6 +680,11 @@ footer{
 }
 
 @media screen and (max-width: 480px){
+
+  html,body{
+    overflow-x: hidden;
+  }
+
   #resume-link{
     font-size: 30px;
     margin: 20px;
@@ -756,14 +765,10 @@ footer{
     font-size: 40px;
     display: flex;
     white-space: nowrap;
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
   .open-name:after{
     display: none;
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
   .twtext{
@@ -771,12 +776,5 @@ footer{
     display: flex;
     white-space:nowrap;
     letter-spacing: 0.3px;
-    max-width: 100%;
-    overflow-x: hidden;
   }
-
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 }
