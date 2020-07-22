@@ -777,4 +777,84 @@ footer{
     white-space:nowrap;
     letter-spacing: 0.3px;
   }
+
+  @media screen and (max-width: 320px){
+    .open-name{
+      font-size: 35px;
+      transform: translate(-330px);
+    }
+
+    .twtext{
+      transform: translateX(-280px);
+    }
+
+    #resume-link{
+      margin: 5px;
+      display: inline-flex;
+      transform: translateX(-30px);
+    }
+
+    .ASL-article{
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+    }
+
+    .piano-trophies{
+      width: 280px;
+      height: 175px;
+      margin: 5px;
+    }
+
+    .piano-vid{
+      width: 280px;
+      height: 175px;
+      margin: 5px;
+    }
+
+    .fvtutor{
+      width: 270px;
+      height: 140px;
+      margin: 0 17px;
+    }
+
+    .kumonpic{
+      height: 65px;
+      margin: 7px 20px;
+    }
+
+    .deerpark{
+      margin: 5px 30px;
+    }
+
+    .tutor-text{
+      margin: 10px 10px;
+    }
+
+    .contact-title{
+      white-space: nowrap;
+      transform: translateX(-30px);
+      margin: 15px 0;
+    }
+
+    .gmail{
+      transform: translateX(-40px);
+    }
+
+    .contact-logos{
+      transform: translateX(10px);
+    }
+
+    .aikido{
+      margin: 0 10px;
+    }
+
+    .catan{
+      margin: 5px 10px;
+    }
+
+    .naruto{
+      margin: 5px 85px;
+    }
+  }
 }
