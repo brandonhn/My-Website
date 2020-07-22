@@ -756,10 +756,14 @@ footer{
     font-size: 40px;
     display: flex;
     white-space: nowrap;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .open-name:after{
     display: none;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .twtext{
@@ -767,5 +771,12 @@ footer{
     display: flex;
     white-space:nowrap;
     letter-spacing: 0.3px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 }
