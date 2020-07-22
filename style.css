@@ -72,6 +72,10 @@ br{
   color: rgb(149, 132, 171);
 }
 
+#intro-nav{
+  padding: 30px;
+}
+
 .intro{
   background: url("starspace.jpg");
   background-repeat: no-repeat;
@@ -80,11 +84,12 @@ br{
 
 .name{
   text-align: center;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 3.5em;
   color: white;
   font-weight: 600;
   border-bottom: 2px solid white;
+  opacity: 0.8;
 }
 
 .about-me-text{
@@ -382,6 +387,42 @@ footer{
     color: white;
     font-size: 18px;
 }
+
+.opening{
+  padding: 350px;
+  text-align: center;
+}
+
+.open-name:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.open-name{
+  margin: auto;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.twtext{
+  text-align: center;
+  margin: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+
 @media screen and (max-width: 768px){
 
   .line{
@@ -639,6 +680,7 @@ footer{
     font-size: 30px;
     margin: 20px;
     text-align: center;
+    white-space: nowrap;
   }
 
   .ASL-article{
@@ -706,5 +748,24 @@ footer{
 
   footer{
     font-size: 15px;
+  }
+
+
+  .open-name{
+    transform: translateX(-300px);
+    font-size: 40px;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .open-name:after{
+    display: none;
+  }
+
+  .twtext{
+    transform: translateX(-225px);
+    display: flex;
+    white-space:nowrap;
+    letter-spacing: 0.3px;
   }
 }
