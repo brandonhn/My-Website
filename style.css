@@ -613,7 +613,7 @@
       text-align: left;
       width: 90%;
       margin: 10px;
-      line-height:10px;
+      line-height:normal;
     }
   
     .piano-text br{
@@ -796,6 +796,9 @@
       display: inline-flex;
       white-space:nowrap;
       letter-spacing: 0.3px;
+    }
+    .piano-text{
+      line-height: normal;
     }
   
     @media screen and (max-width: 320px){
