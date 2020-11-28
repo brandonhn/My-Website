@@ -108,7 +108,7 @@
   
   .about-me-text{
     font-family: 'Crimson Text', serif;
-    font-size:20px;
+    font-size:30px;
     color:white;
     font-weight:600;
     margin: 40px;
@@ -449,12 +449,21 @@
   
   .project-header{
     max-width: 60%;
-    margin: 0 auto 6rem auto;
+    margin: 1em auto 1em auto;
     border-bottom: 0.2rem solid white;
     font-size: 3em;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.3em;
+  }
+
+  .frontend-header{
+    max-width: 40%;
+    margin: 0 auto 8rem auto;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    font-family: 'Sansita Swashed', cursive;
+    color:black;
   }
   .project-grid {
     display: grid;
@@ -464,6 +473,58 @@
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+}
+
+.divider {
+  display: block;
+  height: 2px;
+  background-color: rgb(158, 31, 19);
+  margin: 6.5vw auto;
+  width: 150px;
+}
+.description-left {
+  grid-column: 7/-1;
+  grid-row: 1/-1;
+  text-align: right;
+}
+
+  .acm-img{
+    object-fit: cover;
+    object-position: center center;
+    width: 250%;
+  }
+
+  .exp-title{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bitter', serif;
+  }
+
+  .leda-img{
+    object-fit: cover;
+    object-position: center center;
+    width: 210%;
+  }
+
+  .freshair{
+    object-fit: cover;
+    object-position: center center;
+    width: 220%;
+    height: 85%;
+  }
+  .work-info {
+    margin-bottom: 40px;
+    line-height: 25px;
+    background-color: #1a2b5f;
+    padding: 20px;
+    margin-top: 1.5em;
+    font-family: Montserrat,sans-serif;
+    color: #fff;
+    width: 50%;
+    margin-left: auto;
+    text-align: left;
+    border-radius: 20px;
 }
   .project{
     background: rgb(66, 65, 65);
@@ -489,6 +550,7 @@
     .project-header{
       max-width: auto;
       width: auto;
+      font-size: 2.6em;
     }
     .line{
       width: 30px;
@@ -739,6 +801,25 @@
     .contact-logos{
       margin: 10px;
     }
+
+    .acm-img{
+      width: 150%;
+      height: 50%;
+    }
+    .work-info{
+      margin-bottom: 10px;
+      width: auto;
+      line-height: none;
+    }
+
+    .leda-img{
+      width: 140%;
+    }
+
+    .freshair{
+      width: 140%;
+      height: auto;
+    }
   }
   
   @media screen and (max-width: 480px){
@@ -750,7 +831,16 @@
     .project-header{
       max-width: 70%;
       width: auto;
-      font-size: 2em;
+      font-size: 1.6em;
+      letter-spacing: 0.15em;
+
+    }
+
+    .frontend-header{
+      font-size: 1.5em;
+      max-width: 80%;
+      width: auto;
+      margin: 10%;
     }
   
     #resume-link{
@@ -848,6 +938,33 @@
     .piano-text{
       line-height: normal;
     }
+
+    .acm-img{
+      width: 100%;
+      height: auto;
+      justify-self: center;
+    }
+
+    .work-info{
+      width: auto;
+      transform: translateX(-140%);
+      margin-top: 15em;
+      font-size: 0.7em;
+      justify-self: center;  
+    }
+
+    .freshair{
+      width: 100%;
+      height: auto;
+      justify-self: center;
+    }
+    
+    .leda-img{
+      width: 100%;
+      height: auto;
+      justify-self: center;
+    }
+  }
   
     @media screen and (max-width: 320px){
       .open-name{
