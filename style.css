@@ -768,7 +768,7 @@
     }
   
     .tutor-text{
-      font-size: 16px;
+      font-size: 14px;
     }
   
     .tutor-text br{
@@ -947,13 +947,19 @@
       justify-self: center;  
     }
 
-    .freshair{
+    .bloom-img{
       width: 100%;
       height: auto;
       justify-self: center;
     }
     
-    .leda-img{
+    .ts-img{
+      width: 100%;
+      height: auto;
+      justify-self: center;
+    }
+
+    .acm-img{
       width: 100%;
       height: auto;
       justify-self: center;
@@ -975,7 +981,7 @@
         display: inline-flex;
         transform: translateX(-30px);
       }
-  
+
       .ASL-article{
         width: 300px;
         height: 200px;
@@ -989,9 +995,9 @@
       }
   
       .piano-vid{
-        width: 280px;
-        height: 175px;
-        margin: 5px;
+        width: auto;
+        height: auto;
+        margin: auto;
       }
   
       .fvtutor{
@@ -1011,6 +1017,8 @@
   
       .tutor-text{
         margin: 10px 10px;
+        line-height: normal;
+
       }
   
       .contact-title{
